@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>js-practice</title>
+    <title>Drink-game</title>
     <style>
       body {
         display: flex;
@@ -20,12 +20,12 @@
         text-align: center;
         line-height: 100px;
       }
-      .win {
+      .Safe {
         background: pink;
         border-radius: 50%;
         transform: rotate(360deg);
       }
-      .lose {
+      .Out {
         transform: scale(0.9);
       }
     </style>
@@ -44,11 +44,11 @@
 
         div.addEventListener("click", () => {
           if (i === winner) {
-            div.textContent = "Win!";
-            div.classList.add("win");
+            div.textContent = "Out";
+            div.classList.add("Out");
           } else {
-            div.textContent = "Lose!";
-            div.classList.add("lose");
+            div.textContent = "Safe";
+            div.classList.add("Safe");
           }
         });
 
